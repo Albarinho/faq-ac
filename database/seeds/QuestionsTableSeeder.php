@@ -15,5 +15,6 @@ class QuestionsTableSeeder extends Seeder
             $question->user()->associate($user);
             $question->save();
         });
+
     }
 }
