@@ -89,7 +89,6 @@
     </nav>
 
     <main class="py-4">
-        //can add a class to set the columns to 12 if you d onot want the message to be displayed all across
         @include('flash.error')
         @include('flash.messages')
         @include('flash.status')
