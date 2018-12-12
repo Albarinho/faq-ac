@@ -1,4 +1,5 @@
-extends('layouts.app')
+@extends('layouts.app')
+
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
@@ -27,6 +28,7 @@ extends('layouts.app')
                         </button>
                         {!! Form::close() !!}
                     </div>
+
                 </div>
             </div>
         </div>
