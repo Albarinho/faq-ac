@@ -1,12 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
-use App\Answer;
+
 use Illuminate\Support\Facades\Auth;
 use App\Question;
-
+use App\Answer;
 class AnswerController extends Controller
 {
     /**
@@ -44,14 +43,14 @@ class AnswerController extends Controller
      * @param  \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request, Question $question)
+    public function store(REQUEST $request, $question)
     {
-        $input = $request->validate(
-            ['body' => 'required|min:5',],
-            ['body.required' => 'Body is required',
-                'body.min' => 'Body must be at least 5 characters',
-            ]
-        );
+        $input = $request->validate([
+            'body' => 'required|min:5',
+        ], [
+            'body.required' => 'Body is required',
+            'body.min' => 'Body must be at least 5 characters',
+        ]);
         $input = request()->all();
         $question = Question::find($question);
         $Answer = new Answer($input);
@@ -67,7 +66,7 @@ class AnswerController extends Controller
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Question $question, Answer $answer)
+    public function show( $question, $answer)
     {
         $answer = Answer::find($answer);
         return view('answer')->with(['answer' => $answer, 'question' => $question]);
@@ -79,7 +78,7 @@ class AnswerController extends Controller
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Question $question, Answer $answer)
+    public function edit($question, $answer)
     {
         $answer = Answer::find($answer);
         $edit = TRUE;
@@ -94,7 +93,7 @@ class AnswerController extends Controller
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Question $question, Answer $answer)
+    public function update(REQUEST $request, $question, $answer)
     {
 
         $input = $request->validate([
@@ -115,7 +114,7 @@ class AnswerController extends Controller
      * @param  int $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Question $question, Answer $answer)
+    public function destroy($question, $answer)
     {
         $answer = Answer::find($answer);
         $answer->delete();
