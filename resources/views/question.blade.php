@@ -15,7 +15,7 @@
                            href="{{ route('question.edit',['id'=> $question->id])}}">
                             Edit Question
                         </a>
-                        
+
                         {{ Form::open(['method'  => 'DELETE','onsubmit'=> "return confirm('Do you really want to delete?');",'route' => ['question.destroy', $question->id]])}}
                         <button class="btn btn-danger float-right mr-2" value="submit" type="submit" id="submit">Delete
                         </button>
