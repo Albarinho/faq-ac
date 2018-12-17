@@ -66,7 +66,7 @@ class AnswerController extends Controller
          *
          */
         $user=\auth()->user();
-        $by=User::find($a->user_id);
+        $by=User::find($Answer->user_id);
         Mail::to($user->email)->send(new AnswerNotification($user,$question,$Answer,$by));
         return redirect()->route('question.show', ['question_id' => $question->id])->with('message', 'Saved');
     }
