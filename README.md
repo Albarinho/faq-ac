@@ -3,11 +3,11 @@ This project is to learn about the different features of Laravel by creating a w
 The user is associated with the questions and answers and also can create a profile. People say that the best way to learn is by doing and in this project we will touch many laravel features such as: database models, migrations, unit tests, and seeding.
 Another benefit out of this project was to learn how to use branches in GIT. Creating a branch is safe because you do not work on your master file and if for some reason you made a mistake that you can not fix, you can always go back to your master branch and start all over. Note that it is best practice to merge your working code to the master branch frequently so you do not risk losing your work in case you make a mistake that you cannot fix. 
 
-##If you would like to learn about this project and benefit from the tutorials made by K. Williams from NJIT check the link beow:
-##FAQ Tutorial Playlist
+##If you would like to learn about this project and benefit from the tutorials made by K. Williams from NJIT check it out!:
+**FAQ Tutorial Playlist**
  https://www.youtube.com/playlist?list=PLytMRtonvCRUjrQqKaQeOd2KoYq_ifcpD
 
-##Email Notifications Feature**
+##Email Notifications Feature
 The purpose of the new feature is to notify the user that asked the question when the question is answered. This is beneficial so the user does not have to check the site everyday.
 Most people nowadays have access to email and check their inbox folders more than 3 times a day. The user can benefit from this as he or she will know when the question was answered and can check immediately.
 ##Adding the new feature     
