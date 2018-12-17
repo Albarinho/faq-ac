@@ -1,11 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Mail\AnswerNotification;
+use App\User;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
 use App\Question;
 use App\Answer;
+use Illuminate\Support\Facades\Mail;
+
 class AnswerController extends Controller
 {
     /**
@@ -57,6 +61,13 @@ class AnswerController extends Controller
         $Answer->user()->associate(Auth::user());
         $Answer->question()->associate($question);
         $Answer->save();
+        /*
+         * Send Email to the user that question has been answered
+         *
+         */
+        $user=\auth()->user();
+        $by=User::find($a->user_id);
+        Mail::to($user->email)->send(new AnswerNotification($user,$question,$Answer,$by));
         return redirect()->route('question.show', ['question_id' => $question->id])->with('message', 'Saved');
     }
 

@@ -1,9 +1,12 @@
-<!DOCTYPE html>
-<html>
-<body>
+@component('mail::message')
+    # Hi {{ $user->email }},
 
-<h1>Hi</h1>
-<p>Your question has been answered</p>
+    Your Question has been answered by {{$by->email}}!!!
 
-</body>
-</html>
+    Question : {{$question}}
+
+    Answer :{{$answer}}
+
+    Thanks,
+    {{ config('app.name') }}
+@endcomponent
