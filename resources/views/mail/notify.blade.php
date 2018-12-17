@@ -1,5 +1,5 @@
 @component('mail::message')
-    # Hi {{ $user->email }},
+    # Hi,
 
     Your Question has been answered by {{$by->email}}!!!
 

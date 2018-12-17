@@ -43,11 +43,4 @@ class HoneypotController extends Controller
     }
 
 
-
-        }
-
-
-
-
-
 }

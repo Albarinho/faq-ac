@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Mail\AnswerNotification;
 use App\User;
+use App\Mail\AnswerNotification;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
