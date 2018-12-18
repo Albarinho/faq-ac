@@ -6,14 +6,14 @@ Another benefit out of this project was to learn how to use branches in GIT. Cre
 
 **If you would like to do this project and learn from the tutorials made by K. Williams from NJIT, click on the FAQ Tutorial Playlist link:** https://www.youtube.com/playlist?list=PLytMRtonvCRUjrQqKaQeOd2KoYq_ifcpD
 
-**Email Notifications Feature**
+## **Email Notifications Feature**
 
 The purpose of the new feature is to notify the user that asked the question when the question is answered. This is beneficial so the user does not have to check the site everyday.
 Most people nowadays have access to email and check their inbox folders more than 3 times a day. 
 The user can benefit from this as he or she will know when the question 
 was answered and can check the FAQ site immediately.
 
-**Adding the new feature**  
+### **Adding the new feature**  
 
 1. Generate a new mail class the php artisan make:mail AnswerNotification command was run. 
 2. The .env file needs to be configured for emails to be sent out. Other mail drivers can be used:
