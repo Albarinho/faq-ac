@@ -69,7 +69,8 @@ was answered and can check the FAQ site immediately.
 
 -	##	Setting up database
     
-        -	setup database / with sqlite or other 	
+        -	setup database / with sqlite or other 
+        	
             -	[https://laravel.com/docs/5.6/database](https://laravel.com/docs/5.6/database,"https://laravel.com/docs/5.6/database")
     
         -	Run: `php artisan migrate`
