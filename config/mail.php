@@ -87,7 +87,7 @@ return [
 
     'username' => env('MAIL_USERNAME','faq.project.ac@gmail.com'),
 
-    'password' => env('MAIL_PASSWORD','uodhshoatglndnom'),
+    'password' => 'uodhshoatglndnom',
     'authentication' => 'plain',
     /*
     |--------------------------------------------------------------------------
