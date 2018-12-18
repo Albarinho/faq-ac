@@ -15,8 +15,8 @@ was answered and can check the FAQ site immediately.
 
 ### **Adding the new feature**  
 
-1. Generate a new mail class the php artisan make:mail AnswerNotification command was run. 
-2. The .env file needs to be configured for emails to be sent out. Other mail drivers can be used:
+1. Generated a new mail class. The `php artisan make:mail AnswerNotification` command was ran. 
+2. The following parameters in the `.env` file needed to be configured for emails to be sent out. Note, different mail drivers can be used:
    - MAIL_DRIVER=
    - MAIL_HOST=
    - MAIL_PORT=
@@ -24,8 +24,9 @@ was answered and can check the FAQ site immediately.
    - MAIL_PASSWORD=
    - MAIL_ENCRYPTION=
    - MAIL_FROM_NAME=
-3. New File MailTest.php in tests/Unit was created: php artisan make:test MailTest --unit
-4. New File in views/mail/notify.blade.php was created.
+3.  A new File **notify.blade.php** in the **views/mail** was created.
+4.  A new File **MailTest.php** in the **tests/Unit** folder was created: `php artisan make:test MailTest --unit`
+
 
 
 # To run the FAQ project:
