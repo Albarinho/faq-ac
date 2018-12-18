@@ -67,29 +67,32 @@ was answered and can check the FAQ site immediately.
   	 
   	            php artisan key:generate
 
--	##	Database
+
+-   ## Database
+
+	### Setup
      
-        ### Set up
-     
-        -    Setup database / with sqlite or other:
+    -    Setup database / with sqlite or other:
                 
                 -(https://laravel.com/docs/5.6/database,"https://laravel.com/docs/5.6/database")
              
-        -   Run:    php artisan migrate
+    -   Run:    php artisan migrate
                 
                       php artisan migrate
             
-        -   Run:    unit tests: phpunit
+    -   Run:    unit tests: phpunit
                 
                      phpunit
                                 
-        -   Run:    seeds php artisan migrate:refresh --seed
+    -   Run:    seeds php artisan migrate:refresh --seed
                 
                       php artisan migrate:refresh --seed
+
         
 -   ##	Run the web app
     
    		php artisan serve
+
    
 -	##	Access the webapp in your browser
    				
