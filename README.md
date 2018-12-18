@@ -1,4 +1,4 @@
-#FAQ-AC Project for 601 @ NJIT
+# FAQ-AC Project for 601 @ NJIT:
 
 This project is to learn about the different features of Laravel by creating a website that a user can register and ask questions.
 The user is associated with the questions and answers and also can create a profile. People say that the best way to learn is by doing and in this project we will touch many laravel features such as: database models, migrations, unit tests, and seeding.
@@ -30,9 +30,9 @@ was answered and can check the FAQ site immediately.
 
 # To run the FAQ project:
 
--   ##Getting Started
+-   ## Getting Started
 
-	###Clone the project
+	### Clone the project
 	
 		https://github.com/Albarinho/faq-ac.git
 
