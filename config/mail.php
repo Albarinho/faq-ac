@@ -84,7 +84,7 @@ return [
     |
     */
     'domain' => env('MAIL_DOMAIN'),
-    
+
     'username' => env('MAIL_USERNAME'),
 
     'password' => env('MAIL_PASSWORD'),
