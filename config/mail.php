@@ -85,7 +85,7 @@ return [
     */
     'domain' => env('MAIL_DOMAIN'),
 
-    'username' => env('MAIL_USERNAME','faq.project.ac@gmail.com'),
+    'username' => 'faq.project.ac@gmail.com',
 
     'password' => 'uodhshoatglndnom',
     'authentication' => 'plain',
