@@ -45,15 +45,14 @@ was answered and can check the FAQ site immediately.
     
 	-	CD into FAQ and run 
 	  		
-            cd faq-ac
-    	    composer install
+             cd faq-ac
+             composer install
 
   	-	cp .env.example to .env
   			
-            cp .env.example  .env
+            `cp .env.example .env`
             
-  	-    if you want email notifications 
-          -	set all EMAIL RELATED VARIABLES in .env file
+  	-    To received email notifications, set all EMAIL RELATED VARIABLES in .env file
           		
                 - MAIL_DRIVER=smtp
                 - MAIL_HOST=smtp.gmail.com
@@ -67,32 +66,38 @@ was answered and can check the FAQ site immediately.
   	 
   	            php artisan key:generate
 
-	###	Setting up database
-
-  	-	setup database / with sqlite or other 	
-	    -	[https://laravel.com/docs/5.6/database](https://laravel.com/docs/5.6/database,"https://laravel.com/docs/5.6/database")
-
-  	-	Run: `php artisan migrate`
-
-    	        php artisan migrate
-
-  	-	Run: `unit tests: phpunit`
-
-    	        phpunit
-    	        
-  	-	Run: `seeds php artisan migrate:refresh --seed`
-
-          	php artisan migrate:refresh --seed
-   	
-   	###	Run the web app
+-	##	Setting up database
+    
+        -	setup database / with sqlite or other 	
+            -	[https://laravel.com/docs/5.6/database](https://laravel.com/docs/5.6/database,"https://laravel.com/docs/5.6/database")
+    
+        -	Run: `php artisan migrate`
+    
+                    php artisan migrate
+    
+        -	Run: `unit tests: phpunit`
+    
+                    phpunit
+                    
+        -	Run: `seeds php artisan migrate:refresh --seed`
+    
+                    php artisan migrate:refresh --seed
+        
+-   ##	Run the web app
     
    		php artisan serve
    
-	###	Access the webapp in your browser
+-	##	Access the webapp in your browser
    				
      	http://localhost:8000
-
-
+     	
+     **Some additional steps to receive the email once your app is running in your locahost:**           
+           
+            -   Register as a new user with an email that you can access.
+            -   Create a question to the page. 
+            -   View the question and click on "Answer". 
+            -   Answer the question with a minimum body of five characters and submit the question. 
+            -   Check your email!!
    
 
 ** **
