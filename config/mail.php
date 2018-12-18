@@ -83,11 +83,11 @@ return [
     | connection. You may also set the "password" value below this one.
     |
     */
-    'domain' => env('MAIL_DOMAIN'),
 
-    'username' => 'faq.project.ac@gmail.com',
 
-    'password' => 'uodhshoatglndnom',
+    'username' => env('MAIL_USERNAME'),
+
+    'password' => env('MAIL_PASSWORD'),
     'authentication' => 'plain',
     /*
     |--------------------------------------------------------------------------
