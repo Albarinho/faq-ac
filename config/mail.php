@@ -83,7 +83,7 @@ return [
     | connection. You may also set the "password" value below this one.
     |
     */
-    'domain' => env('MAIL_DOMAIN','faq-ac.herokuapp.com'),
+   
 
     'username' => env('MAIL_USERNAME','postmaster@sandbox81bc57cd266c4bc0b443f1660eb15e4d.mailgun.org'),
 
